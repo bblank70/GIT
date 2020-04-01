@@ -1,8 +1,8 @@
 
 #test data
-#x_x<-c(0,0.5, 1, 1.5, 2, 2.5, 3)
-#y_x<-c(0,.25, 1, 2.25, 4, 6.25, 9)
-#df<-as.data.frame(cbind(x_x, y_x))
+x_x<-c(0,0.5, 1, 1.5, 2, 2.5, 3)
+y_x<-c(0,.25, 1, 2.25, 4, 6.25, 9)
+df<-as.data.frame(cbind(x_x, y_x))
 
 
 circlefit<-function (df){
@@ -80,3 +80,6 @@ circlefit<-function (df){
   #adds the fit circle to the data.
   circleplot+gg_circle(r=radius, xc=Xc, yc=yc)
 } 
+
+circlefit(df)
+circle_parms
